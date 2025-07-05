@@ -4,12 +4,12 @@ A full-stack task management application built with **React**, **Express**, and 
 ---
 ## Approach and Trade-offs for current version
 1. Priority given to have fully working backend and frontend, which left the following for follow up commit:
-    - Style
+    - Style (added in follow up commit)
     - Actual AI suggestions
 2. To expedite development used SQLLite locally
 3. Kept architecture as simple as possible:
     - Backend: express + sqllite
-    - Frontend: react + (tailwind css)
+    - Frontend: react + tailwind css
     - Simple authentication
 
 ---
@@ -19,7 +19,7 @@ A full-stack task management application built with **React**, **Express**, and 
 - Due date handling
 - Active/completed task filtering
 - AI-generated task suggestions (OpenAI or fallback) <- live suggestions coming soon
-- Fully responsive layout (Tailwind CSS) <- coming soon
+- Fully responsive layout Tailwind CSS
 - Filter preference persists via `localStorage`
 
 ---
@@ -53,7 +53,7 @@ npm install
 npm run dev  # or node server.js
 ```
 
-> Login credentials:
+> Test login credentials:
 > - alice / alice123
 > - bob / bob123
 
@@ -95,7 +95,7 @@ OPENAI_API_KEY=sk-...
 - Falls back to mock suggestions if API fails
 
 ---
-## Deployment - to be implemented
+## Deployment <- Out of scope at this time 
 - Frontend: Vercel, Netlify, or static host
 - Backend: Render, Railway, or Node host
 
