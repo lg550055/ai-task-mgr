@@ -17,10 +17,6 @@ app.use(session({
   saveUninitialized: false,
 }));
 
-app.get('/x', (req, res) => {
-  res.send('Hello from Express!');
-});
-
 app.use('/auth', authRoutes);
 app.use('/tasks', auth, taskRoutes);
 app.use('/ai', auth, aiRoutes);
