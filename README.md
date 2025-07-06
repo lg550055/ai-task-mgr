@@ -92,7 +92,7 @@ OPENAI_API_KEY=your_openai_api_key
 | POST   | /ai/suggest      | Get AI task suggestions          |
 
 ---
-## AI Suggestions - Currently mock suggestions
+## AI Suggestions
 - Uses OpenAI GPT-3.5 if `OPENAI_API_KEY` is set in `.env`
 - Falls back to mock suggestions if API fails
 
