@@ -14,11 +14,11 @@ export default function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('http://localhost:4000/auth/login', {
-        username,
-        password,
-      }, { withCredentials: true });
-      console.log('Login response good:', res.data); 
+      const res = await axios.post(
+        'http://localhost:4000/auth/login',
+        {username, password, },
+        { withCredentials: true }
+      );
       login(res.data.username);
       navigate('/');
     } catch (err) {
