@@ -1,16 +1,18 @@
 # Task Manager App
-A full-stack task management application built with **React**, **Express**, and **SQLite**. Users can securely log in, manage their tasks, and receive AI-powered suggestions to boost productivity.
+A full-stack task management application built with **React**, **Express**, and **SQLite**. Users log in to manage their tasks, and receive AI-powered suggestions to boost productivity.
 
 ---
 ## Approach and Trade-offs for current version
-1. Priority given to have fully working backend and frontend, which left the following for follow up commit:
-    - Style (added in follow up commit)
-    - Actual AI suggestions
+1. Priority given to have fully working backend and frontend; then added in follow up commits:
+    - Style
+    - Live AI suggestions
 2. To expedite development used SQLLite locally
-3. Kept architecture as simple as possible:
+3. Kept architecture / implementation as simple as possible:
     - Backend: express + sqllite
     - Frontend: react + tailwind css
+        - JS instead of TypeScript
     - Simple authentication
+    - Simple AI prompt
 
 ---
 ## Features
@@ -18,7 +20,7 @@ A full-stack task management application built with **React**, **Express**, and 
 - Task CRUD (create, update, complete, delete)
 - Due date handling
 - Active/completed task filtering
-- AI-generated task suggestions (OpenAI or fallback) <- live suggestions coming soon
+- AI-generated task suggestions (OpenAI or fallback)
 - Fully responsive layout Tailwind CSS
 - Filter preference persists via `localStorage`
 
@@ -64,8 +66,8 @@ npm install
 npm run dev
 ```
 
-Frontend runs at: [http://localhost:5173](http://localhost:5173)  
-Backend runs at: [http://localhost:4000](http://localhost:4000)
+Frontend url: http://localhost:5173
+Backend url: http://localhost:4000
 
 ---
 ## Environment Variables
@@ -73,7 +75,7 @@ Backend runs at: [http://localhost:4000](http://localhost:4000)
 ```
 PORT=4000
 SESSION_SECRET=your_session_secret
-OPENAI_API_KEY=sk-...
+OPENAI_API_KEY=your_openai_api_key
 ```
 
 ---
